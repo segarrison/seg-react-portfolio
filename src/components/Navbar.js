@@ -1,60 +1,39 @@
-import React from 'react';
+import React from "react";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import ListItem from "@mui/material/ListItem";
+import IconButton from "@mui/material/IconButton";
+import ListItemText from "@mui/material/ListItemText";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import MenuIcon from "@mui/icons-material/Menu";
+import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
+import HomeIcon from "@mui/icons-material/Home";
+import AppsIcon from "@mui/icons-material/Apps";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
+import avatar from "../assets/images/avatar.jpeg";
 
-function Navbar (props){
-  const {
-    pages = [],
-    setActivePage,
-    activePage,
-  } = props;
-
-  // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentPage.name);
-  // }, [currentPage]);
-
-  return (    
-      <nav>
-        <ul className="flex-row">
-          {pages.map((Pages) => (
-            <li
-              className={`mx-5 ${
-                activePage.name === Pages.name && 'navActive'
-                }`}
-              key={Pages.name}
-            >
-              <span
-                onClick={() => setActivePage(Pages)}
-              >
-                {Pages.name}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
-// return (<nav class="navbar navbar-expand-lg navbar-light bg-light">
-//   <div class="container-fluid">
-//     <a class="navbar-brand" href="#">Sarah Garrison</a>
-//     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-//       <span class="navbar-toggler-icon"></span>
-//     </button>
-//     <div class="collapse navbar-collapse" id="navbarNav">
-//       <ul class="navbar-nav">
-//         <li class="nav-item">
-//           <a class="nav-link active" aria-current="page" href="#">About Me</a>
-//         </li>
-//         <li class="nav-item">
-//           <a class="nav-link" href="#">Portfolio</a>
-//         </li>
-//         <li class="nav-item">
-//           <a class="nav-link" href="#">Contact</a>
-//         </li>
-//         <li class="nav-item">
-//           <a class="nav-link">Resume</a>
-//         </li>
-//       </ul>
-//     </div>
-//   </div>
-// </nav>
-);
+function Navbar() {
+  return (
+    <>
+      <Box component="div">
+        <Avatar src={avatar} alt="image of Sarah Garrison" />
+      </Box>
+      <Box component="nav">
+        <AppBar position="static">
+          <Toolbar>
+            <IconButton>
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h5">Sarah Garrison</Typography>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </>
+  );
 }
 
 export default Navbar;
