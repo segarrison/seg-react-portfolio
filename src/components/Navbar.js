@@ -3,8 +3,8 @@ import React from 'react';
 function Navbar (props){
   const {
     pages = [],
-    setCurrentPage,
-    currentPage,
+    setActivePage,
+    activePage,
   } = props;
 
   // useEffect(() => {
@@ -14,17 +14,17 @@ function Navbar (props){
   return (    
       <nav>
         <ul className="flex-row">
-          {pages.map((Page) => (
+          {pages.map((Pages) => (
             <li
               className={`mx-5 ${
-                currentPage.name === Page.name && 'navActive'
+                activePage.name === Pages.name && 'navActive'
                 }`}
-              key={Page.name}
+              key={Pages.name}
             >
               <span
-                onClick={() => setCurrentPage(Page)}
+                onClick={() => setActivePage(Pages)}
               >
-                {Page.name}
+                {Pages.name}
               </span>
             </li>
           ))}
