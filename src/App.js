@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import CssBaseline from '@mui/material/CssBaseline';
+import Header from "./components/Header"
 
 function App() {
  
@@ -11,6 +12,7 @@ function App() {
       <CssBaseline />
     <div>
       <Navbar />
+      <Header />
     
     </div>
     </>

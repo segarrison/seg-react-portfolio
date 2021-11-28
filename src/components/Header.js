@@ -1,12 +1,20 @@
 import React from 'react';
+import Avatar from "@mui/material/Avatar";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import avatar from "../assets/images/avatar.jpeg";
+import Typed from "react-typed";
 
 function Header(props) {
 
   return (
-    <header className="flex-row space-between px-1">
-        <h1>Sarah Garrison</h1>
-      {props.children}
-    </header>
+    <Box>
+      <Avatar src={avatar} alt="image of Sarah Garrison"/>
+      <Typography variant="h4">
+        <Typed strings ={["Sarah Garrison"]} typeSpeed = {40} />
+      </Typography>
+    </Box>
   );
 }
 
