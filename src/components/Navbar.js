@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState} from "react";
 import styled from "@emotion/styled";
-
+import Drawer from '@mui/material/Drawer';
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import ListItem from "@mui/material/ListItem";
@@ -22,8 +22,8 @@ import { ListItemIcon } from "@mui/material";
 function Navbar() {
   const styleBox = {
     width: "250px",
-    background: "green",
-    height: "30rem",
+    background: "#6A040F",
+    height: "100%",
   };
 
   const styleAvatar = {
@@ -49,30 +49,46 @@ function Navbar() {
     listIcon: <ContactMailIcon />,
     listText: "Contact"
   }]
-
-  return (
-    <>
-      <Box style={styleBox} component="div">
+  
+  const styleNavIcons = {
+    color: "#E85D04"
+  }
+const [state, setState] = useState({
+  right: false
+})
+const toggleSlider = (slider, open) => () =>{
+  setState({...state, [slider]:open })
+}
+const sideNav = slider => (
+<Box style={styleBox} component="div">
         <Avatar src={avatar} alt="image of Sarah Garrison" style = {styleAvatar}/>
         <Divider />
         <List>
           {navIcons.map((listItems, key) =>
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon style={styleNavIcons}>
               {listItems.listIcon}
             </ListItemIcon>
-            <ListItemText />
+            <ListItemText style={styleNavIcons} primary = {listItems.listText}/>
           </ListItem>
           )}
         </List>
       </Box>
+
+)
+  return (
+    <>
+      
       <Box component="nav">
         <AppBar position="static">
           <Toolbar>
-            <IconButton>
+            <IconButton onClick={toggleSlider("right", true)}>
               <MenuIcon />
             </IconButton>
             <Typography variant="h5">Sarah Garrison</Typography>
+            <Drawer open={state.right} anchor="right">
+              {sideNav("right")}
+            </Drawer>
           </Toolbar>
         </AppBar>
       </Box>
