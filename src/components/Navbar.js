@@ -1,6 +1,6 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Drawer from '@mui/material/Drawer';
+import Drawer from "@mui/material/Drawer";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import ListItem from "@mui/material/ListItem";
@@ -30,63 +30,67 @@ function Navbar() {
     display: "block",
     margin: "0.5rem auto",
     width: "104px",
-    height: "104px"
-  }
+    height: "104px",
+  };
 
-  const navIcons =[{
-    listIcon: <HomeIcon />,
-    listText: "Home"
-  },
-  {
-    listIcon: <AssignmentIndIcon />,
-    listText: "Resume"
-  },
-  {
-    listIcon: <AppsIcon />,
-    listText: "Portfolio"
-  },
-  {
-    listIcon: <ContactMailIcon />,
-    listText: "Contact"
-  }]
-  
+  const navIcons = [
+    {
+      listIcon: <HomeIcon />,
+      listText: "Home",
+    },
+    {
+      listIcon: <AssignmentIndIcon />,
+      listText: "Resume",
+    },
+    {
+      listIcon: <AppsIcon />,
+      listText: "Portfolio",
+    },
+    {
+      listIcon: <ContactMailIcon />,
+      listText: "Contact",
+    },
+  ];
+
   const styleNavIcons = {
-    color: "#E85D04"
-  }
-const [state, setState] = useState({
-  right: false
-})
-const toggleSlider = (slider, open) => () =>{
-  setState({...state, [slider]:open })
-}
-const sideNav = slider => (
-<Box style={styleBox} component="div" onClick={toggleSlider(slider, false)}>
-        <Avatar src={avatar} alt="image of Sarah Garrison" style = {styleAvatar}/>
-        <Divider />
-        <List>
-          {navIcons.map((listItems, key) =>
+    color: "#E85D04",
+  };
+  const [state, setState] = useState({
+    right: false,
+  });
+  const toggleSlider = (slider, open) => () => {
+    setState({ ...state, [slider]: open });
+  };
+  const sideNav = (slider) => (
+    <Box style={styleBox} component="div" onClick={toggleSlider(slider, false)}>
+      <Avatar src={avatar} alt="image of Sarah Garrison" style={styleAvatar} />
+      <Divider />
+      <List>
+        {navIcons.map((listItems, key) => (
           <ListItem button>
             <ListItemIcon style={styleNavIcons}>
               {listItems.listIcon}
             </ListItemIcon>
-            <ListItemText style={styleNavIcons} primary = {listItems.listText}/>
+            <ListItemText style={styleNavIcons} primary={listItems.listText} />
           </ListItem>
-          )}
-        </List>
-      </Box>
-
-)
+        ))}
+      </List>
+    </Box>
+  );
   return (
     <>
-      
       <Box component="nav">
-        <AppBar position="static">
+        <AppBar position="static" style={{ background: "#370617" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <MenuIcon />
+              <MenuIcon style={{ color: "#E85D04" }} />
             </IconButton>
             <Typography variant="h5">Sarah Garrison</Typography>
-            <Drawer open={state.right} anchor="right" onClose={toggleSlider("right", false)}>
+            <Drawer
+              open={state.right}
+              anchor="right"
+              onClose={toggleSlider("right", false)}
+            >
               {sideNav("right")}
             </Drawer>
           </Toolbar>
