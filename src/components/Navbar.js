@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
 import Drawer from "@mui/material/Drawer";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -37,22 +37,22 @@ function Navbar() {
     {
       listIcon: <HomeIcon />,
       listText: "Home",
-      listLink: "#home"
+      listLink: "#home",
     },
     {
       listIcon: <AssignmentIndIcon />,
       listText: "Resume",
-      listLink: "#resume"
+      listLink: "#resume",
     },
     {
       listIcon: <AppsIcon />,
       listText: "Portfolio",
-      listLink: "#portfolio"
+      listLink: "#portfolio",
     },
     {
       listIcon: <ContactMailIcon />,
       listText: "Contact",
-      listLink: "#contact"
+      listLink: "#contact",
     },
   ];
 
@@ -70,9 +70,9 @@ function Navbar() {
       <Avatar src={avatar} alt="image of Sarah Garrison" style={styleAvatar} />
       <Divider />
       <List>
-        {navIcons.map((listItems, key) => (
+        {navIcons.map((listItems) => (
           <ListItemButton component="a" href={listItems.listLink}>
-            <ListItemIcon style={styleNavIcons} >
+            <ListItemIcon style={styleNavIcons}>
               {listItems.listIcon}
             </ListItemIcon>
             <ListItemText style={styleNavIcons} primary={listItems.listText} />
@@ -84,7 +84,7 @@ function Navbar() {
   return (
     <>
       <Box component="nav">
-        <AppBar position="fixed" style={{ background: "#370617", top:0 }}>
+        <AppBar position="fixed" style={{ background: "#370617", top: 0 }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <MenuIcon style={{ color: "#E85D04" }} />

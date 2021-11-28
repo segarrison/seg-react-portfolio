@@ -41,7 +41,7 @@ function Header(props) {
         <Typed strings ={["Sarah Garrison"]} typeSpeed = {40} />
       </Typography>
       <Typography variant="h5" style={styleSubtitle}>
-        <Typed strings ={["Web Developer", "Programmer", "Nerd"]} typeSpeed = {40} backSpeed={60} loop/>
+        <Typed strings ={["Web Developer", "Problem Solver", "Programmer", "Nerd"]} typeSpeed = {40} backSpeed={60} loop/>
       </Typography>
     </Box>
   );
