@@ -12,22 +12,22 @@ function App() {
       <CssBaseline />
       <div>
         <Navbar />
-        <Header />
         <Particles
+          height={"100vh"}
           options={{
-            autoPlay:true,
+            autoPlay: true,
             fullScreen: {
               enable: false,
-              zIndex: 1
+              zIndex: 0,
             },
             fpsLimit: 60,
             particles: {
               links: {
                 color: "#ffffff",
-                distance: 150,
+                distance: 175,
                 enable: true,
                 opacity: 0.5,
-                width: 1
+                width: 1,
               },
               collisions: {
                 enable: true,
@@ -37,15 +37,22 @@ function App() {
                 enable: true,
                 outMode: "bounce",
                 random: false,
-                speed: 3,
-                straight: false
+                speed: 1,
+                straight: false,
               },
               number: {
-                value: 60,
+                value: 50,
               },
+              opacity:{
+                value:{
+                  min: 0.2,
+                  max: 0.6
+                }
+              }
             },
           }}
         />
+        <Header />
       </div>
     </>
   );
