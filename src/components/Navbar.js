@@ -60,7 +60,7 @@ const toggleSlider = (slider, open) => () =>{
   setState({...state, [slider]:open })
 }
 const sideNav = slider => (
-<Box style={styleBox} component="div">
+<Box style={styleBox} component="div" onClick={toggleSlider(slider, false)}>
         <Avatar src={avatar} alt="image of Sarah Garrison" style = {styleAvatar}/>
         <Divider />
         <List>
@@ -86,7 +86,7 @@ const sideNav = slider => (
               <MenuIcon />
             </IconButton>
             <Typography variant="h5">Sarah Garrison</Typography>
-            <Drawer open={state.right} anchor="right">
+            <Drawer open={state.right} anchor="right" onClose={toggleSlider("right", false)}>
               {sideNav("right")}
             </Drawer>
           </Toolbar>
