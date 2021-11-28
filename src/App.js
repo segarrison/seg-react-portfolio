@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import CssBaseline from "@mui/material/CssBaseline";
 import Header from "./components/Header";
+import Projects from "./components/Projects";
 import "./App.css";
 import Particles from "react-tsparticles";
 
@@ -53,6 +54,7 @@ function App() {
           }}
         />
         <Header />
+        <Projects />
       </div>
     </>
   );

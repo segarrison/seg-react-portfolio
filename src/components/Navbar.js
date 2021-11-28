@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import Drawer from "@mui/material/Drawer";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
 import IconButton from "@mui/material/IconButton";
 import ListItemText from "@mui/material/ListItemText";
 import Avatar from "@mui/material/Avatar";
@@ -37,18 +37,22 @@ function Navbar() {
     {
       listIcon: <HomeIcon />,
       listText: "Home",
+      listLink: "#home"
     },
     {
       listIcon: <AssignmentIndIcon />,
       listText: "Resume",
+      listLink: "#resume"
     },
     {
       listIcon: <AppsIcon />,
       listText: "Portfolio",
+      listLink: "#portfolio"
     },
     {
       listIcon: <ContactMailIcon />,
       listText: "Contact",
+      listLink: "#contact"
     },
   ];
 
@@ -67,12 +71,12 @@ function Navbar() {
       <Divider />
       <List>
         {navIcons.map((listItems, key) => (
-          <ListItem button>
-            <ListItemIcon style={styleNavIcons}>
+          <ListItemButton component="a" href={listItems.listLink}>
+            <ListItemIcon style={styleNavIcons} >
               {listItems.listIcon}
             </ListItemIcon>
             <ListItemText style={styleNavIcons} primary={listItems.listText} />
-          </ListItem>
+          </ListItemButton>
         ))}
       </List>
     </Box>
@@ -80,7 +84,7 @@ function Navbar() {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#370617" }}>
+        <AppBar position="fixed" style={{ background: "#370617", top:0 }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <MenuIcon style={{ color: "#E85D04" }} />

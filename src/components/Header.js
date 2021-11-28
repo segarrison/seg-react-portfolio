@@ -33,7 +33,7 @@ function Header(props) {
  }
 
   return (
-    <Box style={styleTypeContainer}>
+    <Box style={styleTypeContainer} id="home">
       <Grid container justifyContent="center">
       <Avatar src={avatar} alt="image of Sarah Garrison" style={styleAvatar}/>
       </Grid>
