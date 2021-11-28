@@ -33,9 +33,22 @@ function Navbar() {
     height: "104px"
   }
 
-  const navIcons ={
-    
-  }
+  const navIcons =[{
+    listIcon: <HomeIcon />,
+    listText: "Home"
+  },
+  {
+    listIcon: <AssignmentIndIcon />,
+    listText: "Resume"
+  },
+  {
+    listIcon: <AppsIcon />,
+    listText: "Portfolio"
+  },
+  {
+    listIcon: <ContactMailIcon />,
+    listText: "Contact"
+  }]
 
   return (
     <>
@@ -43,11 +56,14 @@ function Navbar() {
         <Avatar src={avatar} alt="image of Sarah Garrison" style = {styleAvatar}/>
         <Divider />
         <List>
-          <ListItem>
+          {navIcons.map((listItems, key) =>
+          <ListItem button>
             <ListItemIcon>
-
+              {listItems.listIcon}
             </ListItemIcon>
+            <ListItemText />
           </ListItem>
+          )}
         </List>
       </Box>
       <Box component="nav">
