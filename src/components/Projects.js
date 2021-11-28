@@ -23,7 +23,7 @@ function Projects() {
         Portfolio
       </Typography>
       <Grid container justifyContent="center" alignItems="center">
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={8} md={6} lg={4}>
           <Card style={styleCardContainer}>
             <CardActionArea>
               <CardMedia
@@ -54,7 +54,7 @@ function Projects() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={8} md={6} lg={4}>
           <Card style={styleCardContainer}>
             <CardActionArea>
               <CardMedia
@@ -85,7 +85,7 @@ function Projects() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={8} md={6} lg={4}>
           <Card style={styleCardContainer}>
             <CardActionArea>
               <CardMedia

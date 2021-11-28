@@ -16,8 +16,10 @@ import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import HomeIcon from "@mui/icons-material/Home";
 import AppsIcon from "@mui/icons-material/Apps";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
+import PersonPinIcon from "@mui/icons-material/PersonPin";
 import avatar from "../assets/images/avatar.jpeg";
 import { ListItemIcon } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const styleBox = {
@@ -37,22 +39,27 @@ function Navbar() {
     {
       listIcon: <HomeIcon />,
       listText: "Home",
-      listLink: "#home",
+      listLink: "/",
+    },
+    {
+      listIcon: <PersonPinIcon />,
+      listText: "About Me",
+      listLink: "/about",
+    },  
+    {
+      listIcon: <AppsIcon />,
+      listText: "Portfolio",
+      listLink: "/portfolio",
     },
     {
       listIcon: <AssignmentIndIcon />,
       listText: "Resume",
-      listLink: "#resume",
-    },
-    {
-      listIcon: <AppsIcon />,
-      listText: "Portfolio",
-      listLink: "#portfolio",
+      listLink: "/resume",
     },
     {
       listIcon: <ContactMailIcon />,
       listText: "Contact",
-      listLink: "#contact",
+      listLink: "/contact",
     },
   ];
 
@@ -70,8 +77,8 @@ function Navbar() {
       <Avatar src={avatar} alt="image of Sarah Garrison" style={styleAvatar} />
       <Divider />
       <List>
-        {navIcons.map((listItems) => (
-          <ListItemButton component="a" href={listItems.listLink}>
+        {navIcons.map((listItems, key) => (
+          <ListItemButton key={key} component={Link} to={listItems.listLink}>
             <ListItemIcon style={styleNavIcons}>
               {listItems.listIcon}
             </ListItemIcon>
