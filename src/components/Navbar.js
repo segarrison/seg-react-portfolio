@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "@emotion/styled";
+
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import ListItem from "@mui/material/ListItem";
@@ -15,12 +17,38 @@ import HomeIcon from "@mui/icons-material/Home";
 import AppsIcon from "@mui/icons-material/Apps";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import avatar from "../assets/images/avatar.jpeg";
+import { ListItemIcon } from "@mui/material";
 
 function Navbar() {
+  const styleBox = {
+    width: "250px",
+    background: "green",
+    height: "30rem",
+  };
+
+  const styleAvatar = {
+    display: "block",
+    margin: "0.5rem auto",
+    width: "104px",
+    height: "104px"
+  }
+
+  const navIcons ={
+    
+  }
+
   return (
     <>
-      <Box component="div">
-        <Avatar src={avatar} alt="image of Sarah Garrison" />
+      <Box style={styleBox} component="div">
+        <Avatar src={avatar} alt="image of Sarah Garrison" style = {styleAvatar}/>
+        <Divider />
+        <List>
+          <ListItem>
+            <ListItemIcon>
+
+            </ListItemIcon>
+          </ListItem>
+        </List>
       </Box>
       <Box component="nav">
         <AppBar position="static">
