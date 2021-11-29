@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import Navbar from "./Navbar";
 import CssBaseline from "@mui/material/CssBaseline";
 import Header from "./Header";
-import Footer from "./Footer";
+
 // import Projects from "./Projects";
 // import "../"; (css?)
 import Particles from "react-tsparticles";

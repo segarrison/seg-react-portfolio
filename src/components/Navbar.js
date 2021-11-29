@@ -39,7 +39,7 @@ function Navbar() {
     {
       listIcon: <HomeIcon />,
       listText: "Home",
-      listLink: "/",
+      listLink: "/seg-react-portfolio",
     },
     {
       listIcon: <PersonPinIcon />,

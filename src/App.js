@@ -12,20 +12,22 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
     <>
+    <Router>
+    
     
       <Navbar />
       <Routes>
-         <Route  path="/" exact element ={<Home />} />
+         <Route  exact path="/seg-react-portfolio" element ={<Home />} />
          <Route path="/portfolio" element={<Projects />} />
          <Route path="/resume" element={<Resume />} />
          <Route path="/contact" element={<Contact />} />
 
       </Routes>
       <Footer />
-    </>
+    
     </Router>
+    </>
   );
 }
 
