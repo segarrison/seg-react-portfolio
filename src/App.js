@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Contact  from "./components/Contact";
 import Footer from "./components/Footer";
+import About from "./components/About"
 import "./App.css";
 
 
@@ -22,6 +23,7 @@ function App() {
          <Route path="/portfolio" element={<Projects />} />
          <Route path="/resume" element={<Resume />} />
          <Route path="/contact" element={<Contact />} />
+         <Route path="/about" element={<About />} />
 
       </Routes>
       <Footer />
