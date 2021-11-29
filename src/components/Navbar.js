@@ -54,7 +54,7 @@ function Navbar() {
     {
       listIcon: <AssignmentIndIcon />,
       listText: "Resume",
-      listLink: "/resume",
+      listLink: {pathname: "https://docs.google.com/document/d/1rLHmlBzlKUi1_Vp1EZsj6PSwS5vOx-VB/edit?usp=sharing&ouid=103911207378054781726&rtpof=true&sd=true"},
     },
     {
       listIcon: <ContactMailIcon />,
@@ -91,7 +91,7 @@ function Navbar() {
   return (
     <>
       <Box component="nav">
-        <AppBar position="fixed" style={{ background: "#370617", top: 0 }}>
+        <AppBar position="static" style={{ background: "#370617", top: 0 }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <MenuIcon style={{ color: "#E85D04" }} />

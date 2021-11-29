@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import CssBaseline from "@mui/material/CssBaseline";
 // import Header from "./components/Header";
 import Projects from "./components/Projects";
+import Resume from "./components/Resume";
 import "./App.css";
 // import Particles from "react-tsparticles";
 
@@ -17,7 +18,7 @@ function App() {
       <Routes>
          <Route  path="/" exact element ={<Home />} />
          <Route path="/portfolio" element={<Projects />} />
-     
+         {/* <Route path="/resume" element={<Resume />} /> */}
 
       </Routes>
     
