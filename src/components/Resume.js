@@ -1,9 +1,11 @@
 import React from 'react';
+import Paper from "@mui/material/Paper"
 
 function Resume() {
   return (
     <section className="my-5">
       <div className="my-2">
+        <Paper elevation ={24}>
       <p>
         Download my <a href="https://docs.google.com/document/d/1rLHmlBzlKUi1_Vp1EZsj6PSwS5vOx-VB/edit?usp=sharing&ouid=103911207378054781726&rtpof=true&sd=true">resume</a>
         </p>
@@ -27,6 +29,7 @@ function Resume() {
           <li>REST</li>
           <li>GraphQL</li>
         </ul>
+        </Paper>
       </div>
     </section>
   );

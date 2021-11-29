@@ -30,6 +30,8 @@ function Footer() {
   const styleFooter = {
       height: 60,
       backgroundColor: "#003566",
+      position: "static",
+      bottom: "0"
   }
 
   const styleNavIcons = {
