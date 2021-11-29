@@ -54,7 +54,7 @@ function Navbar() {
     {
       listIcon: <AssignmentIndIcon />,
       listText: "Resume",
-      listLink: {pathname: "https://docs.google.com/document/d/1rLHmlBzlKUi1_Vp1EZsj6PSwS5vOx-VB/edit?usp=sharing&ouid=103911207378054781726&rtpof=true&sd=true"},
+      listLink: "/resume",
     },
     {
       listIcon: <ContactMailIcon />,

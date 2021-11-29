@@ -55,7 +55,7 @@ function Home() {
           }}
         />
         <Header />
-        <Footer />
+        
       </div>
     </>
   );
