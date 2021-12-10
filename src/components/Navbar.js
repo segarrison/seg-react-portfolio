@@ -20,6 +20,16 @@ import PersonPinIcon from "@mui/icons-material/PersonPin";
 import avatar from "../assets/images/avatar.jpeg";
 import { ListItemIcon } from "@mui/material";
 import { Link } from "react-router-dom";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      '"Josefin Sans"',
+      'sans-serif'
+    ].join(','),
+  }
+})
 
 function Navbar() {
   const styleBox = {
@@ -96,7 +106,9 @@ function Navbar() {
             <IconButton onClick={toggleSlider("right", true)}>
               <MenuIcon style={{ color: "#E85D04" }} />
             </IconButton>
+            <ThemeProvider theme={theme}>
             <Typography variant="h5">Sarah Garrison</Typography>
+            </ThemeProvider>
             <Drawer
               open={state.right}
               anchor="right"

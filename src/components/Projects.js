@@ -11,17 +11,32 @@ import Button from "@mui/material/Button";
 import mtg from "../assets/images/mtg-alpha.png";
 import workout from "../assets/images/wt-add.png";
 import wishdish from "../assets/images/wishdishnew.png";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ['"Josefin Sans"', "sans-serif"].join(","),
+  },
+});
 
 function Projects() {
   const styleCardContainer = {
     maxWidth: 345,
+    height: 410,
     margin: "5rem auto",
+  };
+
+  const styleHeader = {
+    color: "white",
+    textAlign: "center",
   };
   return (
     <Box component="div" id="portfolio">
-      <Typography variant="h2" color="white" id="portfolio">
-        Portfolio
-      </Typography>
+      <ThemeProvider theme={theme}>
+        <Typography variant="h2" id="portfolio" style={styleHeader}>
+          Portfolio
+        </Typography>
+      </ThemeProvider>
       <Grid container justifyContent="center" alignItems="center">
         <Grid item xs={12} sm={8} md={6} lg={4}>
           <Card style={styleCardContainer}>
@@ -29,7 +44,7 @@ function Projects() {
               <CardMedia
                 component="img"
                 alt="MtG Alpha Collector"
-                height="100%"
+                height="190"
                 image={mtg}
               />
               <CardContent>
@@ -44,10 +59,20 @@ function Projects() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" href="https://github.com/Nickm615/MtG-Alpha-Collection-Manager" target="blank">
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/Nickm615/MtG-Alpha-Collection-Manager"
+                target="blank"
+              >
                 GitHub Repo
               </Button>
-              <Button size="small" color="primary" href="https://mtg-alpha-collection-manager.herokuapp.com/" target="blank">
+              <Button
+                size="small"
+                color="primary"
+                href="https://mtg-alpha-collection-manager.herokuapp.com/"
+                target="blank"
+              >
                 Live Link
               </Button>
             </CardActions>
@@ -60,7 +85,7 @@ function Projects() {
               <CardMedia
                 component="img"
                 alt="Fitness Tracker"
-                height="100%"
+                height="190"
                 image={workout}
               />
               <CardContent>
@@ -72,13 +97,25 @@ function Projects() {
                   cardio activity for the day, and then displays graphs of the
                   past seven days of workout activity.
                 </Typography>
+                <br />
+                <br />
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary" href="https://github.com/segarrison/WorkoutTracker" target="blank">
+              <Button
+                size="small"
+                color="primary"
+                href="https://github.com/segarrison/WorkoutTracker"
+                target="blank"
+              >
                 GitHub Repo
               </Button>
-              <Button size="small" color="primary" href="https://stark-badlands-68480.herokuapp.com/" target="blank">
+              <Button
+                size="small"
+                color="primary"
+                href="https://stark-badlands-68480.herokuapp.com/"
+                target="blank"
+              >
                 Live Link
               </Button>
             </CardActions>
@@ -91,7 +128,7 @@ function Projects() {
               <CardMedia
                 component="img"
                 alt="WishDish"
-                height="100%"
+                height="170"
                 image={wishdish}
               />
               <CardContent>
@@ -120,10 +157,20 @@ function Projects() {
               >
                 GitHub Repo
               </Button>
-              <Button size="small" color="primary" href="https://nskidmore7.github.io/GroupProject1/" target="blank">
+              <Button
+                size="small"
+                color="primary"
+                href="https://nskidmore7.github.io/GroupProject1/"
+                target="blank"
+              >
                 Live Link
               </Button>
-              <Button size="small" color="primary" href="https://cors-anywhere.herokuapp.com/corsdemo" target="blank">
+              <Button
+                size="small"
+                color="primary"
+                href="https://cors-anywhere.herokuapp.com/corsdemo"
+                target="blank"
+              >
                 Demo Server
               </Button>
             </CardActions>
