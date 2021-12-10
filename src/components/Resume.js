@@ -7,7 +7,7 @@ function Resume() {
       <div className="my-2">
         <Paper elevation ={24}>
       <p>
-        Download my <a href="https://drive.google.com/file/d/1QxVGugjySa_SX3qWemSSFNiQGmIVsPH5/view?usp=sharing">resume</a>
+        Download my <a href="https://drive.google.com/file/d/1QxVGugjySa_SX3qWemSSFNiQGmIVsPH5/view?usp=sharing" target = "blank">resume</a>
         </p>
         <h3>Front-end Proficiencies</h3>
         <ul className="skills">
