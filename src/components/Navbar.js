@@ -12,7 +12,6 @@ import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import MenuIcon from "@mui/icons-material/Menu";
-import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import HomeIcon from "@mui/icons-material/Home";
 import AppsIcon from "@mui/icons-material/Apps";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
@@ -60,11 +59,6 @@ function Navbar() {
       listIcon: <AppsIcon />,
       listText: "Portfolio",
       listLink: "/portfolio",
-    },
-    {
-      listIcon: <AssignmentIndIcon />,
-      listText: "Resume",
-      listLink: "/resume",
     },
     {
       listIcon: <ContactMailIcon />,

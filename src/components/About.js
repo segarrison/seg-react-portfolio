@@ -4,7 +4,8 @@ import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 import Grid from "@mui/material/Grid";
 import avatar from "../assets/images/avatar.jpeg";
-import Typed from "react-typed";
+import FadeIn from 'react-fade-in';
+import Button from '@mui/material/Button';
 
 function About() {
     const styleAvatar = {
@@ -40,21 +41,19 @@ function About() {
           style={styleAvatar}
         />
       </Grid>
+      <FadeIn delay={50, 200, 1500} transitionDuration={600}>
       <Typography variant="h4" style={styleTitle}>
-        <Typed strings={["Sarah Garrison"]} typeSpeed={40} />
+        Sarah Garrison
+        
       </Typography>
       <Typography variant="h5" style={styleSubtitle}>
-        <Typed
-          strings={["I'm a passionate coding professional who is excited to work with you on your next project."]}
-          typeSpeed={28}
-          
-        />
-        <br />
-        <Typed strings={["Or talk to you about your latest DnD game!"]}
-        typeSpeed={50}
-        startDelay={4100}
-        />
+        I'm a passionate coding professional who is excited to work with you on your next project.
+        </Typography>
+        <Typography variant="h5" style={styleSubtitle}>
+        Or talk to you about your latest DnD game!
       </Typography>
+      <Button variant="contained" href="https://drive.google.com/file/d/1QxVGugjySa_SX3qWemSSFNiQGmIVsPH5/view?usp=sharing" target = "blank">My Resume</Button>
+      </FadeIn>
     </Box>
   );
 }
