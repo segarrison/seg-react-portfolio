@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import { LinkedIn } from "@mui/icons-material";
 
 function Footer() {
-  // Replace links with social media profiles
+ 
   const icons = [
     {
       name: "GitHub",
@@ -21,7 +21,7 @@ function Footer() {
   ];
 
   const styleFooter = {
-    height: 60,
+    height: "8vh",
     backgroundColor: "rgba(0, 35, 66, 0.6",
     position: "fixed",
     bottom: "0",

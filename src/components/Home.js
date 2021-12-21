@@ -15,7 +15,7 @@ function Home() {
       <div>
        
         <Particles
-          height={"80vh"}
+          height={"85vh"}
           options={{
             autoPlay: true,
             fullScreen: {
