@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/seg-react-portfolio/static/css/main.a32fa4b7.chunk.css",
+    "main.css": "/seg-react-portfolio/static/css/main.c8c6e4e3.chunk.css",
     "main.js": "/seg-react-portfolio/static/js/main.a1feb009.chunk.js",
     "main.js.map": "/seg-react-portfolio/static/js/main.a1feb009.chunk.js.map",
     "runtime-main.js": "/seg-react-portfolio/static/js/runtime-main.c865b9f4.js",
@@ -8,7 +8,7 @@
     "static/js/2.94224d46.chunk.js": "/seg-react-portfolio/static/js/2.94224d46.chunk.js",
     "static/js/2.94224d46.chunk.js.map": "/seg-react-portfolio/static/js/2.94224d46.chunk.js.map",
     "index.html": "/seg-react-portfolio/index.html",
-    "static/css/main.a32fa4b7.chunk.css.map": "/seg-react-portfolio/static/css/main.a32fa4b7.chunk.css.map",
+    "static/css/main.c8c6e4e3.chunk.css.map": "/seg-react-portfolio/static/css/main.c8c6e4e3.chunk.css.map",
     "static/js/2.94224d46.chunk.js.LICENSE.txt": "/seg-react-portfolio/static/js/2.94224d46.chunk.js.LICENSE.txt",
     "static/media/avatar.c51117d6.jpeg": "/seg-react-portfolio/static/media/avatar.c51117d6.jpeg",
     "static/media/App.css": "/seg-react-portfolio/static/media/christian-wiediger-WkfDrhxDMC8-unsplash.63e02e87.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.c865b9f4.js",
     "static/js/2.94224d46.chunk.js",
-    "static/css/main.a32fa4b7.chunk.css",
+    "static/css/main.c8c6e4e3.chunk.css",
     "static/js/main.a1feb009.chunk.js"
   ]
 }
