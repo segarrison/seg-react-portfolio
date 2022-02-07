@@ -12,7 +12,7 @@ import mtg from "../assets/images/mtg-alpha.png";
 import workout from "../assets/images/wt-add.png";
 import wishdish from "../assets/images/wishdishnew.png";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import "../assets/css/comp.css";
+// import "../assets/css/comp.css";
 
 const theme = createTheme({
   typography: {

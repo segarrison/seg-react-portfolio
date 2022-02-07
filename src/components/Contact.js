@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Animated } from "react-animated-css";
-import "../assets/css/comp.css";
+// import "../assets/css/comp.css";
 
 const theme = createTheme({
   typography: {
