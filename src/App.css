@@ -1,9 +1,5 @@
-/* #root{
-  background-color: #03071E;
 
-} */
-
-html {
+body {
   
   background: url(./assets/images/christian-wiediger-WkfDrhxDMC8-unsplash.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
