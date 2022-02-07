@@ -12,6 +12,7 @@ import mtg from "../assets/images/mtg-alpha.png";
 import workout from "../assets/images/wt-add.png";
 import wishdish from "../assets/images/wishdishnew.png";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import "../assets/css/comp.css";
 
 const theme = createTheme({
   typography: {
@@ -31,7 +32,7 @@ function Projects() {
     textAlign: "center",
   };
   return (
-    <Box component="div" id="portfolio">
+    <Box component="div" id="portfolio" >
       <ThemeProvider theme={theme}>
         <Typography variant="h2" id="portfolio" style={styleHeader}>
           Portfolio
