@@ -62,6 +62,8 @@ function Contact() {
                   Email: s.garrison@gmail.com
                   <br />
                   Phone: 713.898.3482
+                  <br />
+                  <br />
                 </Typography>
               </Typography>
             </Animated>
