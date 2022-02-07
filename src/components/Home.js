@@ -1,11 +1,6 @@
-import React, { useState } from "react";
-// import { Route } from "react-router-dom";
-// import Navbar from "./Navbar";
+import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Header from "./Header";
-
-// import Projects from "./Projects";
-// import "../"; (css?)
 import Particles from "react-tsparticles";
 
 function Home() {

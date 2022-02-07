@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Animated } from "react-animated-css";
-// import "../assets/css/comp.css";
+
 
 const theme = createTheme({
   typography: {
@@ -62,6 +62,7 @@ function Contact() {
                   Email: s.garrison@gmail.com
                   <br />
                   Phone: 713.898.3482
+                  <p></p>
                   <p></p>
                 </Typography>
               </Typography>
